@@ -1,0 +1,40 @@
+@mixin table {
+  @include viewport(mobile) {
+    overflow-x: scroll;
+  }
+  @include glass(outset);
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid transparent;
+  box-shadow: 1px 1px 6px #0000002e;
+}
+
+@mixin tableHeaderHeading {
+  border: 1px solid #0000002e;
+  text-align: center;
+  padding: 5px 10px;
+  font-weight: 800;
+  font-size: 1.15em;
+}
+
+@mixin tableInfoSection {
+  &:nth-child(odd) {
+    @include glass(outset);
+  }
+  &:nth-child(even) {
+    @include glass(inset);
+  }
+}
+
+@mixin tableInfoSectionData {
+  border: 1px solid #0000002e;
+  text-align: center;
+  padding: 15px 10px;
+}
+
+@mixin tableInfoSectionDataLink {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1.25px solid;
+  font-weight: 600;
+}

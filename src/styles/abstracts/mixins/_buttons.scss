@@ -1,0 +1,17 @@
+@mixin button {
+  @include buttonHover;
+  @include glass(inset);
+  padding: 5px 10px;
+  border: 0;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+@mixin buttonHover {
+  transition: 0.25s all;
+  &:hover {
+    background-color: black;
+    color: white;
+    box-shadow: none;
+  }
+}

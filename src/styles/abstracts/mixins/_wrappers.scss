@@ -1,0 +1,11 @@
+@mixin pageWrapper {
+  @include viewport(mobile) {
+    width: 95%;
+  }
+  @include viewport(desktop) {
+    width: 65%;
+  }
+  @include flexbox(column);
+  align-items: center;
+  margin: 20px auto;
+}

@@ -1,0 +1,26 @@
+@import '../abstracts/abstracts';
+
+.form {
+  @include form;
+  &Fieldset {
+    @include formFieldset;
+    &Label {
+      @include formFieldsetLabel;
+    }
+    &Input {
+      @include formFieldsetInput;
+    }
+    &Button {
+      @include formFieldsetButton;
+    }
+    &Status {
+      @include formFieldsetStatus;
+    }
+    &StatusSuccess {
+      @include formFieldsetStatusSuccess;
+    }
+    &StatusError {
+      @include formFieldsetStatusError;
+    }
+  }
+}

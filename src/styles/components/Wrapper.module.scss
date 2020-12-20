@@ -1,0 +1,8 @@
+@import '../abstracts/abstracts';
+
+.wrapper {
+  @include pageWrapper;
+  .pageTitle {
+    @include pageTitle;
+  }
+}

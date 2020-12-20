@@ -1,0 +1,27 @@
+@import '../../../styles/abstracts/abstracts';
+
+.footer {
+  @include viewport(mobile) {
+    @include flexbox(column);
+    align-items: center;
+  }
+  @include viewport(desktop) {
+    @include flexbox(row);
+    align-items: center;
+  }
+  border-top: 2px solid rgba(0, 0, 0, 0.5);
+  &Title {
+    @include viewport(desktop) {
+      flex: 1;
+    }
+    font-weight: 400;
+    margin: 10px;
+    &Link {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  &Copyright {
+    margin: 10px;
+  }
+}

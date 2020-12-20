@@ -1,0 +1,56 @@
+@mixin form {
+  @include flexbox(column);
+  @include glass(outset);
+  align-items: center;
+  margin: 20px auto;
+  box-shadow: 1px 1px 6px #0000002e;
+  border-radius: 10px;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+@mixin formFieldset {
+  @include flexbox(column);
+  width: 100%;
+  margin: 15px 0;
+  border: 0;
+}
+
+@mixin formFieldsetLabel {
+  font-size: 1.5em;
+  margin: 10px;
+}
+
+@mixin formFieldsetInput {
+  @include glass(inset);
+  font-size: 1.2em;
+  margin: 10px;
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 20px;
+}
+
+@mixin formFieldsetButton {
+  @include button;
+  padding: 10px 20px;
+  font-size: 1.25em;
+  margin: 10px;
+}
+
+@mixin formFieldsetStatus {
+  text-align: center;
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  font-size: 1.1em;
+}
+
+@mixin formFieldsetStatusSuccess {
+  background-color: green;
+}
+
+@mixin formFieldsetStatusError {
+  background-color: crimson;
+}

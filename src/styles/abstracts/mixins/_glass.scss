@@ -1,0 +1,8 @@
+@mixin glass($status) {
+  @if $status == 'inset' {
+    background-color: #eef0f4;
+  } @else {
+    background-color: white;
+  }
+  box-shadow: $status 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff;
+}

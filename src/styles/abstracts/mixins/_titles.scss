@@ -1,0 +1,13 @@
+@mixin pageTitle {
+  @include viewport(mobile) {
+    font-size: 1.75em;
+  }
+  @include glass(outset);
+  font-weight: 400;
+  margin: 10px;
+  box-shadow: 1px 1px 6px #0000002e;
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: 100%;
+  text-align: center;
+}

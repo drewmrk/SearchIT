@@ -1,0 +1,11 @@
+@mixin viewport($size) {
+  @if $size == 'mobile' {
+    @media (max-width: 850px) {
+      @content;
+    }
+  } @else if $size == 'desktop' {
+    @media (min-width: 851px) {
+      @content;
+    }
+  }
+}

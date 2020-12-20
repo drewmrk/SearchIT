@@ -1,0 +1,29 @@
+@import '../../../styles/abstracts/abstracts';
+
+.hero {
+  @include flexbox(column);
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  &Title {
+    @include viewport(mobile) {
+      font-size: 2em;
+    }
+    @include viewport(desktop) {
+      font-size: 2.45em;
+    }
+    text-align: center;
+    margin: 10px;
+    font-weight: 400;
+  }
+  &Button {
+    @include viewport(mobile) {
+      font-size: 1.15em;
+    }
+    @include viewport(desktop) {
+      font-size: 1.5em;
+    }
+    @include button;
+    margin: 10px;
+  }
+}

@@ -1,0 +1,25 @@
+@import '../abstracts/abstracts';
+
+.table {
+  @include viewport(mobile) {
+    overflow-x: scroll;
+    display: block;
+  }
+  @include table;
+  &HeaderWrapper {
+    .tableHeader {
+      &Heading {
+        @include tableHeaderHeading;
+      }
+    }
+  }
+  &InfoSection {
+    @include tableInfoSection;
+    &Data {
+      @include tableInfoSectionData;
+      &Link {
+        @include tableInfoSectionDataLink;
+      }
+    }
+  }
+}

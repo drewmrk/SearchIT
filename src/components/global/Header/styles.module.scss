@@ -1,0 +1,50 @@
+@import '../../../styles/abstracts/abstracts';
+
+.header {
+  @include flexbox(row);
+  background: #eef0f4;
+  &Title {
+    @include viewport(mobile) {
+      font-size: 2.05em;
+    }
+    @include viewport(desktop) {
+      font-size: 2.25em;
+    }
+    flex: 1;
+    font-weight: 400;
+    margin: 10px;
+    &Link {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  &Nav {
+    @include viewport(mobile) {
+      overflow-x: scroll;
+    }
+    @include flexbox(row);
+    align-items: center;
+    margin: 10px;
+    &List {
+      @include flexbox(row);
+      list-style-type: none;
+      &Item {
+        padding: 10px;
+        margin: 0 15px;
+        &Link {
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+    }
+    &AuthenticationBttn {
+      @include viewport(mobile) {
+        font-size: 1em;
+      }
+      @include viewport(desktop) {
+        font-size: 1.15em;
+      }
+      @include button;
+    }
+  }
+}
