@@ -1,4 +1,4 @@
-#![SearchIT](./public/android-chrome-192x192.png)
+![SearchIT](./public/android-chrome-192x192.png)
 
 ## The raw, easy to use asset management system
 
